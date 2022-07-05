@@ -1,58 +1,108 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <section id="landing_page">
+      <div class="container-fluid head_content">
+        <header class="title">
+          <h1>Welcome to Find Your Home Today</h1>
+          <p><i>“Let us Guide you Home” -Compass</i></p>
+        </header>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+section {
+  min-height: 100vh;
 }
-a {
-  color: #42b983;
+
+#landing_page {
+  background-image: url("https://github.com/AbuBakrKhan24/JS_Project/blob/main/Images/Background/Landing%20Page/sawa's%20home.png?raw=true");
+  background-size: cover;
+  opacity: 0.8 black;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  text-shadow: 2px 2px #38435a;
+  text-align: center;
+}
+
+/* Sort & Filter */
+.sort-filter {
+  justify-content: center;
+  display: flex;
+  border: 1px solid;
+  border-radius: 6px;
+  /* padding: 40px; */
+  backdrop-filter: blur(5px);
+  height: auto;
+  width: 100%;
+}
+
+select {
+  width: 130px;
+
+  background-color: rgba(255, 0, 0, -5.1);
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+select:focus-visible {
+  overflow: none !important;
+}
+
+.button_div {
+  display: flex;
+  justify-content: center;
+}
+
+.search_btn {
+  background-color: rgba(255, 0, 0, -5.1);
+  border: 2px solid black;
+  border-radius: 6px;
+  margin: 0;
+  width: 200px;
+}
+
+.search_btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+option {
+  background-color: rgb(51 179 254);
+}
+
+label {
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px #38435a;
+}
+/* Sort & Filter Done */
+
+button {
+  margin-right: 10%;
 }
 </style>
