@@ -28,14 +28,15 @@
                 >Home</router-link
               >
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link text-light" to="/about"
-                >About</router-link
-              >
-            </li>
+
             <li class="nav-item">
               <router-link class="nav-link text-light" to="/properties"
                 >Properties</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/admin"
+                >Admin</router-link
               >
             </li>
           </ul>
